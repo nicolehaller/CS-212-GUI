@@ -22,8 +22,7 @@ public class Word {
 	public static boolean isValidWord(String s) {
 		Pattern p;
 		Matcher m;
-		//String S_PATTERN = "[a-zA-Z]+";
-		String S_PATTERN = "\\d$";
+		String S_PATTERN = "[a-zA-Z]+";
 		p= Pattern.compile(S_PATTERN);
 		m=p.matcher(s);
 		return m.matches();
